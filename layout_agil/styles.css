@@ -1,0 +1,162 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #CDCDE6;
+}
+
+.ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.menu {
+    width: 240px;
+    background-color: #8BE68B;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.menu img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu h2 {
+    margin-top: 0;
+}
+
+.menu p {
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.menu-links {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-links li {
+    margin-bottom: 10px;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.menu-links a:hover {
+    background-color: #A3A3AF;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tasks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-table {
+    width: 45%;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-table h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.task-table ol {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.task-table li {
+    margin-bottom: 10px;
+}
+
+.task-list li .delete-task {
+    display: none;
+}
+
+.task-table button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color:#73BD73;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-table button:hover {
+    background-color: #B4F694;
+}
+
+.task-table .task-input {
+    width: calc(100% - 40px);
+    padding: 8px;
+    font-size: 1em;
+    margin-right: 10px;
+    border: 1px solid #D5BFC2;
+    border-radius: 4px;
+}
+
+.task-table .add-task {
+    display: flex;
+    align-items: center;
+}
+
+.task-table .add-task button {
+    flex-shrink: 0;
+}
+
+.task-table .delete-task {
+    color: #e74c3c;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+.task-table .delete-task:hover {
+    color: #c0392b;
+}
