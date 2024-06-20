@@ -1,5 +1,5 @@
 # Sistema de Clínica de Consultas
-
+import datetime
 # Listas para armazenar pacientes e agendamentos
 pacientes = []
 agendamentos = []
@@ -37,6 +37,12 @@ def marcar_consulta():
     dia = input("Digite o dia da consulta (DD/MM/AAAA): ")
     hora = input("Digite a hora da consulta (HH:MM): ")
     especialidade = input("Digite a especialidade desejada: ")
+
+    #Verificar datas retroativas
+    data_consulta = datetime.datetime.strptime(dia,'%d/%m/%Y')
+    if data_consulta < datetime.datetime.now():
+        print("Não é possivel realizar uma consulta para o passado ;)\n")
+        return
 
     # Verificar disponibilidade de agendamento
     for agendamento in agendamentos:
