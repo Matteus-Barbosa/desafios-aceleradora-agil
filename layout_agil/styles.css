@@ -17,7 +17,7 @@ body {
     align-items: flex-start;
     padding: 20px;
 }
-
+/* Menu lateral */
 .menu {
     width: 240px;
     background-color: #8BE68B;
@@ -75,7 +75,7 @@ body {
 .menu-links a:hover {
     background-color: #A3A3AF;
 }
-
+/* Lista de tarefas */
 .content {
     flex-grow: 1;
     padding: 20px;
