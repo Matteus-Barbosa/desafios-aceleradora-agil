@@ -1,5 +1,5 @@
-# Sistema de Clínica de Consultas
 import datetime
+
 # Listas para armazenar pacientes e agendamentos
 pacientes = []
 agendamentos = []
